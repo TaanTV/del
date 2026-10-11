@@ -31,7 +31,7 @@ camp_main_01 = {
 	}
 	
 	# If you ever lose your main tent, for the love of god, get it back AQAP.
-	ai_value = { value = 10000000 } # add 10000
+	ai_value = { value = 10000 }
 
 	### ASIAN
 	asset = {
@@ -148,7 +148,7 @@ camp_main_02 = {
 			limit = {
 				num_domicile_buildings >= 4
 			}
-			multiply = 10
+			multiply = 1000	#prev 10
 		}
 	}
 
@@ -264,7 +264,7 @@ camp_main_03 = {
 		camp_unlocks_second_officer = yes
 	}
 	ai_value = {
-		value = 100000 # add camp_main_main_path_value
+		value = 100000		#prev camp_main_main_path_value
 		if = {
 			limit = {
 				num_domicile_buildings >= 8
@@ -385,7 +385,7 @@ camp_main_04 = {
 		camp_unlocks_second_officer = yes
 	}
 	ai_value = {
-		value = 100000 # add camp_main_main_path_value
+		value = 100000	#prev camp_main_main_path_value
 		if = {
 			limit = {
 				num_domicile_buildings >= 12
@@ -498,7 +498,7 @@ supply_tent_01 = {
 		camp_unlocks_quartermaster_officer = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 1000 } # supply_tent_main_path_value
+	ai_value = { value = supply_tent_main_path_value }
 
 	asset = {
 		trigger = {
@@ -547,7 +547,7 @@ supply_tent_02 = {
 		camp_unlocks_quartermaster_officer = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 1000 } # supply_tent_main_path_value
+	ai_value = { value = 1000 }	#prev supply_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -596,7 +596,7 @@ supply_tent_03 = {
 		camp_unlocks_quartermaster_officer = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 1000 } # add supply_tent_main_path_value
+	ai_value = { value = 1000 }	#prev supply_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -647,7 +647,7 @@ supply_tent_04 = {
 		camp_unlocks_quartermaster_officer = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 100 } # add supply_tent_main_path_value
+	ai_value = { value = 1000 }	#prev supply_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -698,7 +698,7 @@ supply_tent_05 = {
 		camp_unlocks_quartermaster_officer = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 100 } # add supply_tent_main_path_value 
+	ai_value = { value = 1000 }	#prev supply_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -751,7 +751,7 @@ supply_tent_06 = {
 		camp_unlocks_quartermaster_officer = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 100 } # add supply_tent_main_path_value
+	ai_value = { value = 100 }	#prev supply_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -796,7 +796,7 @@ supply_tent_sutler = { # Sutler
 		supply_capacity_mult = 0.25
 	}
 	ai_value = {
-		value = 100000 # add camp_building_ai_base_t1
+		value = 1000000		#prev camp_building_ai_base_t1
 		if = {
 			limit = {
 				owner = { has_lifestyle = stewardship_lifestyle }
@@ -971,7 +971,7 @@ supply_tent_arsenal = { # Arsenal
 		camp_unlocks_armorer_officer = yes
 	}
 	ai_value = {
-		value = 100000 # add camp_building_ai_base_t3
+		value = 10000		#prev camp_building_ai_base_t3
 		if = {
 			limit = {
 				owner = { has_lifestyle = martial_lifestyle }
@@ -1049,7 +1049,7 @@ supply_tent_reserve_provisions = { # Reserve Provisions
 		camp_unlocks_chief_forager_officer = yes
 	}
 	ai_value = {
-		value = camp_building_ai_base_t5
+		value = 1	#prev camp_building_ai_base_t5
 		if = {
 			limit = {
 				owner = { has_lifestyle = diplomacy_lifestyle }
@@ -1126,7 +1126,7 @@ supply_tent_reserve_water = { # Reserve Water
 		camp_unlocks_chief_forager_officer = yes
 	}
 	ai_value = {
-		value = camp_building_ai_base_t5
+		value = 1	#prev camp_building_ai_base_t5
 		if = {
 			limit = {
 				owner = { has_lifestyle = diplomacy_lifestyle }
@@ -1200,7 +1200,7 @@ supply_tent_climbing_gear = { # Climbing Gear
 		desert_mountains_min_combat_roll = 3
 	}
 	ai_value = {
-		value = 0 # add camp_building_ai_base_t5 
+		value = camp_building_ai_base_t5
 		if = {
 			limit = {
 				owner = { has_lifestyle = diplomacy_lifestyle }
@@ -1273,7 +1273,7 @@ supply_tent_subdued_gear = { # Subdued Gear
 		camp_reduced_criminal_contract_xp_gain = yes
 	}
 	ai_value = {
-		value = camp_building_ai_base_t5
+		value = 1000	#prev camp_building_ai_base_t5
 		if = {
 			limit = {
 				owner = { has_lifestyle = intrigue_lifestyle }
@@ -1329,7 +1329,7 @@ barber_tent_01 = {
 	parameters = {
 		camp_infection_chance_buff_1 = yes
 	}
-	ai_value = { value = 100000 } # add barber_tent_main_path_value
+	ai_value = { value = 1000000 }	#prev barber_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -1381,7 +1381,7 @@ barber_tent_02 = {
 		camp_infection_chance_buff_1 = yes
 		camp_infection_chance_buff_2 = yes
 	}
-	ai_value = { value = 1000000 } # barber_tent_main_path_value
+	ai_value = { value = 1000000 } #prev barber_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -1433,7 +1433,7 @@ barber_tent_03 = {
 		camp_infection_chance_buff_1 = yes
 		camp_infection_chance_buff_3 = yes
 	}
-	ai_value = { value = 100000 } # barber_tent_main_path_value
+	ai_value = { value = 100000	}	#prev barber_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -1486,7 +1486,7 @@ barber_tent_04 = {
 		camp_infection_chance_buff_1 = yes
 		camp_infection_chance_buff_4 = yes
 	}
-	ai_value = { value = 10000 } # barber_tent_main_path_value
+	ai_value = { value = 10000 }	#prev barber_tent_main_path_value 
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -1540,7 +1540,7 @@ barber_tent_05 = {
 		camp_infection_chance_buff_1 = yes
 		camp_infection_chance_buff_5 = yes
 	}
-	ai_value = { value = 10000 } # barber_tent_main_path_value
+	ai_value = { value = 1000 }		#prev barber_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -1595,7 +1595,7 @@ barber_tent_06 = {
 		camp_infection_chance_buff_1 = yes
 		camp_infection_chance_buff_6 = yes
 	}
-	ai_value = { value = 1000 } # barber_tent_main_path_value
+	ai_value = { value = 100 }	#prev barber_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -1957,7 +1957,7 @@ baggage_train_01 = {
 		camp_unlocks_head_porter_officer = yes
 		receives_more_escort_contracts = yes
 	}
-	ai_value = { value = 0 } # add baggage_train_main_path_value
+	ai_value = { value = 1 }	#prev baggage_train_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -2406,7 +2406,7 @@ baggage_train_trackers = { # Trackers
 		camp_improves_gather_provisions_hunting = yes
 	}
 	ai_value = {
-		value = 10000 # add camp_building_ai_base_t3
+		value = 1	#prev camp_building_ai_base_t3
 		if = {
 			limit = {
 				owner = { has_lifestyle = martial_lifestyle }
@@ -2595,7 +2595,7 @@ baggage_train_shrine = { # Shrine
 		camp_unlocks_camp_priest_officer = yes
 	}
 	ai_value = {
-		value = 1000 # add camp_building_ai_base_t3
+		value = 1000	#prev camp_building_ai_base_t3
 		if = {
 			limit = {
 				owner = { has_lifestyle = learning_lifestyle }
@@ -2803,7 +2803,7 @@ baggage_train_proof_of_claims = { # Proof of Claims
 		camp_unlocks_witness_officer = yes
 	}
 	ai_value = {
-		value = 1000 # add camp_building_ai_base_t5
+		value = 1000	#prev camp_building_ai_base_t5
 		if = {
 			limit = {
 				owner = { has_lifestyle = diplomacy_lifestyle }
@@ -3137,7 +3137,7 @@ mess_tent_01 = {
 		camp_improves_gather_provisions_decision = yes
 		camp_unlocks_camp_party_food_option = yes
 	}
-	ai_value = { value = 0 } # add mess_tent_main_path_value
+	ai_value = { value = 1 }	#prev mess_tent_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -3726,7 +3726,7 @@ camp_fire_01 = {
 		camp_better_scout_for_talent = yes
 		fireside_chat_intent_unlock = yes
 	}
-	ai_value = { value = 0 } # add camp_fire_main_path_value
+	ai_value = { value = 1 }	#prev camp_fire_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -4539,7 +4539,7 @@ proving_grounds_01 = {
 	parameters = {
 		camp_unlocks_master_of_arms_officer = yes
 	}
-	ai_value = { value = 100 } # add proving_grounds_main_path_value
+	ai_value = { value = 100 }	#prev proving_grounds_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -4586,7 +4586,7 @@ proving_grounds_02 = {
 	parameters = {
 		camp_unlocks_master_of_arms_officer = yes
 	}
-	ai_value = { value = 1000 } # add proving_grounds_main_path_value
+	ai_value = { value = 100 }	#prev  proving_grounds_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -4635,7 +4635,7 @@ proving_grounds_03 = {
 	parameters = {
 		camp_unlocks_master_of_arms_officer = yes
 	}
-	ai_value = { value = 1000 } # add 
+	ai_value = { value = 100 }	#prev  proving_grounds_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -4684,7 +4684,7 @@ proving_grounds_04 = {
 	parameters = {
 		camp_unlocks_master_of_arms_officer = yes
 	}
-	ai_value = { value = 1000 } # add proving_grounds_main_path_value
+	ai_value = { value = 100 }	#prev  proving_grounds_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -4735,7 +4735,7 @@ proving_grounds_05 = {
 	parameters = {
 		camp_unlocks_master_of_arms_officer = yes
 	}
-	ai_value = { value = 1000 } # add proving_grounds_main_path_value
+	ai_value = { value = 100 }	#prev  proving_grounds_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -4786,7 +4786,7 @@ proving_grounds_06 = {
 	parameters = {
 		camp_unlocks_master_of_arms_officer = yes
 	}
-	ai_value = { value = 1000 } # add proving_grounds_main_path_value
+	ai_value = { value = 100 }	#prev  proving_grounds_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -5434,7 +5434,7 @@ proving_grounds_lockwagon = { # Lockwagon
 		camp_improved_entice_local_mercenaries = yes
 	}
 	ai_value = {
-		value = 100000 # add camp_building_ai_base_t5
+		value = 1000000		#prev camp_building_ai_base_t5
 		if = {
 			limit = {
 				owner = { has_lifestyle = intrigue_lifestyle }
@@ -5703,7 +5703,7 @@ camp_perimeter_01 = {
 	parameters = {
 		camp_unlocks_forward_scouts = yes
 	}
-	ai_value = { value = 10000 } # camp_perimeter_main_path_value
+	ai_value = { value = 10000 }	#prev  camp_perimeter_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -5752,7 +5752,7 @@ camp_perimeter_02 = {
 	parameters = {
 		camp_unlocks_forward_scouts = yes
 	}
-	ai_value = { value = 10000 } # add camp_perimeter_main_path_value
+	ai_value = { value = 10000 }	#prev  camp_perimeter_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -5803,7 +5803,7 @@ camp_perimeter_03 = {
 	parameters = {
 		camp_unlocks_forward_scouts = yes
 	}
-	ai_value = { value = 100000 } # add camp_perimeter_main_path_value
+	ai_value = { value = 10000 }	#prev  camp_perimeter_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -5854,7 +5854,7 @@ camp_perimeter_04 = {
 	parameters = {
 		camp_unlocks_forward_scouts = yes
 	}
-	ai_value = { value = 1 } # camp_perimeter_main_path_value
+	ai_value = { value = 1 }	#prev  camp_perimeter_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -5906,7 +5906,7 @@ camp_perimeter_05 = {
 	parameters = {
 		camp_unlocks_forward_scouts = yes
 	}
-	ai_value = { value = 1 } # add camp_perimeter_main_path_value
+	ai_value = { value = 1 }	#prev  camp_perimeter_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -5959,7 +5959,7 @@ camp_perimeter_06 = {
 	parameters = {
 		camp_unlocks_forward_scouts = yes
 	}
-	ai_value = { value = 1 } # camp_perimeter_main_path_value
+	ai_value = { value = 1 }	#prev  camp_perimeter_main_path_value
 	asset = {
 		trigger = {
 			owner.culture = {
@@ -6004,7 +6004,7 @@ camp_perimeter_good_siting = { # Good Siting
 		#enemy_hostile_scheme_phase_duration_add = minor_scheme_phase_duration_malus_value
 	}
 	ai_value = {
-		value = 100 # camp_building_ai_base_t1
+		value = 1000	#prev camp_building_ai_base_t1
 		if = {
 			limit = {
 				owner = { has_lifestyle = martial_lifestyle }
@@ -6055,7 +6055,7 @@ camp_perimeter_fixed_layout = { # Fixed Layout
 		men_at_arms_limit = 1
 	}
 	ai_value = {
-		value = 100000 #  add camp_building_ai_base_t2
+		value = camp_building_ai_base_t2
 		if = {
 			limit = {
 				owner = { has_lifestyle = martial_lifestyle }
